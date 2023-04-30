@@ -1,0 +1,29 @@
+﻿@model List<SalesPersonOverviewViewModel>
+
+<h2>Sales people</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Zip code</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Hire date</th>
+            <th>Number of orders</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var salesPerson in Model)
+        {
+            <tr>
+                <td><a href="@(Url.Action("Details", "SalesPeople", new { id = salesPerson.Id }))">@(salesPerson.Name)</a></td>
+                <td>@(salesPerson.ZipCode)</td>
+                <td>@(salesPerson.City)</td>
+                <td>@(salesPerson.Address)</td>
+                <td>@(salesPerson.HireDate)</td>
+                <td>@(salesPerson.NumberOfOrders)</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+﻿@model List<OrderLineOverviewViewModel>
+
+<h2>Order line overview</h2>
+
+<ul>
+    @foreach(var orderLineOverviewItem in Model)
+    {
+       <li>@(orderLineOverviewItem.Year), @(orderLineOverviewItem.MonthName): @(orderLineOverviewItem.OrderLineCount)</li>
+    }
+</ul>
+

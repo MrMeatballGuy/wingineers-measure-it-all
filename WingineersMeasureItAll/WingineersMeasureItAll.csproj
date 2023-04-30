@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\SalesPeople\" />
+    <None Remove="Views\Orders\" />
+    <None Remove="Services\" />
+    <None Remove="ApiResponse\" />
+    <None Remove="Converters\" />
+    <None Remove="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\SalesPeople\" />
+    <Folder Include="Views\Orders\" />
+    <Folder Include="Services\" />
+    <Folder Include="ApiResponse\" />
+    <Folder Include="Converters\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+</Project>
